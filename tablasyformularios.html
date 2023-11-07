@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas y Formularios</title>
+    <style>
+        table {
+            border: 2px solid orange;
+        }
+
+        th, td {
+            border: 1px solid black;
+        }
+
+        #opciones {
+            display: none;
+        } 
+
+        .select {
+            width: 100%;
+            background-color: papayawhip;
+        }
+
+        .select ul li{
+            padding: 8px 0;
+            list-style: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Contacta con nosotros</h1>
+    <table>
+        <thead>
+            <th>
+                Contenido
+            </th>
+            <th>
+                Formulario
+            </th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <table>
+                        <thead>
+                            <th colspan="2">Contacto</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="" alt="telefono"> 
+                                </td>
+                                <td>
+                                    9999999
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="" alt="location"> 
+                                </td>
+                                <td>
+                                    St. Patrick Avenue 1108
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="" alt="correo"> 
+                                </td>
+                                <td>
+                                    corporativo@emrpesa.com
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="" alt="facebook"> 
+                                </td>
+                                <td>
+                                    Empresa
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="" alt="instagram"> 
+                                </td>
+                                <td>
+                                    @red_empresa
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </td>
+
+                <td>
+                    <label for="correo"> Correo electronico</label>
+                    <input id="correo" type="text" placeholder="Ingrese su correo">
+                    <input type="submit" value="Enviar">
+
+                    <select name="options" id="opciones">
+                        <option value="individual">Individual</option>
+                        <option value="empresas">Para empresas</option>
+                        <option value="educativo">Para educacion</option>
+                    </select>
+
+                    <div class="select">
+                        <ul>
+                            <li> Individual</li>
+                            <li> Para empresas</li>
+                            <li> Para educacion</li>
+                        </ul>
+                    </div>
+                    <input type="submit" value="Enviar">
+               
+                </td>
+        </tbody>
+        
+    </table>
+
+</body>
+</html>
